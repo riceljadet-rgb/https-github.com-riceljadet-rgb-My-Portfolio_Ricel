@@ -1,0 +1,245 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff4ed;
+    color: #292522;
+}
+
+/* Navigation */
+header {
+    padding: 25px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    color: #d9785e;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #d9785e;
+}
+
+/* Home */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 40px;
+    background: linear-gradient(120deg, #fff4ed, #f9d8cb);
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.small-text {
+    color: #d9785e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+span {
+    color: #d9785e;
+}
+
+.intro h3 {
+    margin-bottom: 15px;
+}
+
+.intro p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d9785e;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: #b85c45;
+}
+
+/* Profile Picture */
+.profile img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #f4d6c9;
+}
+
+/* General Sections */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9dfd4;
+    padding: 30px 20px;
+    width: 220px;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #c76c53;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Projects */
+.project-card {
+    background-color: #f9dfd4;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.project-card h3,
+.project-card p {
+    margin: 12px 15px;
+}
+.achievement img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.achievement img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* Achievements */
+.achievement {
+    background-color: #f9dfd4;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.achievement h3 {
+    color: #c76c53;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+.contact {
+    background-color: #f9dfd4;
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .profile img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .section {
+        padding: 50px 7%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
